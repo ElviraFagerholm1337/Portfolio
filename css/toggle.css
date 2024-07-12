@@ -1,0 +1,288 @@
+
+/* Styling for the carousel */
+.section {
+background: #ffffff;
+border-radius: 20px;
+border: 2px solid #3D155F;
+overflow: hidden;
+margin-top: 30px;
+margin-bottom: 65px;
+padding: 40px 40px 74px 40px;
+display: none;
+}
+
+/* Add these CSS styles for the card animation */
+.rutnät {
+  width: 3161px; /* Set the width as needed */
+  height: 440px;
+  overflow: hidden; /* Hide the overflow to contain the sliding images */
+  display: flex; /* Display images in a row using flexbox */
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#hidden-section1 > .rutnät {
+  width: 4000px;
+}
+
+#hidden-section3 > .rutnät {
+  width: 4250px;
+}
+
+#hidden-section4 > .rutnät {
+  width: 3500px;
+}
+
+.hidden-card {
+  width: 100%; /* Adjust the width of the individual images */
+  display: inline-block; /* Display images in a row */
+  margin-right: 20px; /* Add some margin between images */
+}
+
+.bilden {
+  width: 300px;
+  height: auto; /* Adjust the height as needed */
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+
+}
+
+#slideshow-container4 > .hidden-card > .bilden {
+  width: 241px;
+}
+
+.threeD {
+  box-shadow: none;
+  height: 400px;
+  width: auto;
+}
+
+
+.vertikal {
+  width: auto;
+  height: 419.98px;
+}
+
+#slideshow-container4 > .hidden-card > .vertikal {
+  height: 427px;
+  width: auto;
+}
+
+#slideshow-container1 > .hidden-card > .vertikal {
+  height: 440px;
+  width: auto;
+}
+
+#slideshow-container3 > .hidden-card > .vertikal {
+  height: 440px;
+  width: auto;
+}
+
+#slideshow-container1 > .text {
+  height: 440px;
+  width: auto;
+}
+
+.hidden-project {
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: rgb(249, 249, 249);
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    border-radius: 20px;
+    border: 2px solid rgb(61, 21, 95);
+    margin-top: 15px;
+    margin-bottom: 30px;
+    padding: 60px 60px 60px 60px;
+}
+
+#hidden-project24 {
+  grid-template-columns: 1fr;
+}
+
+
+
+.hidden-project > h2 {
+   width: 100%;
+   grid-column: 1/5;
+}
+
+.hidden-project-text {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   grid-column: 1/4;
+}
+
+.hidden-project-text > h3 {
+  color: #2C2C54;
+}
+
+.projektbtn {
+   max-width: 184px;
+   min-width: 184px;
+}
+
+.hidden-project-img {
+  grid-column: 4/7;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+#hidden-project-link > h4 {
+  color: #C33C3C;
+  text-decoration: underline;
+}
+
+#hidden-project-link >h4:hover {
+  color: #2C2C54;
+}
+
+/* Östergötlands Sjukhusclowner */
+
+/* ORIGINAL */
+#hidden-project-img11 {
+  width: 100%;
+  height: auto;
+}
+
+#hidden-project-img12,
+#hidden-project-img13,
+#hidden-project-img14 {
+  width: 30%;
+    height: auto;
+}
+
+/* ORIGINAL */
+#hidden-project-img21 {
+  width: 100%;
+  height: auto;
+}
+
+#hidden-project-img22,
+#hidden-project-img23,
+#hidden-project-img24 {
+  width: 30%;
+    height: auto;
+}
+
+.fullscreen {
+  grid-column: 1/7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.businesscard {
+  grid-column: 1/7;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+#hidden-project-img121,
+#hidden-project-img122 {
+width: 50%;
+}
+
+.threeDpiece {
+  grid-column: 1/7;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+flex-wrap: wrap;
+align-content: flex-start;
+}
+
+#hidden-project-img123 {
+width: 100%;
+}
+
+.posters {
+  grid-column: 1/7;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+#hidden-project-img124,
+#hidden-project-img125,
+#hidden-project-img126  {
+width: 30%;
+}
+
+
+/* ANDRA STORLEKAR */
+
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #hidden-project-img22,
+  #hidden-project-img23,
+  #hidden-project-img24 {
+    width: 50%;
+    height: auto;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .hidden-project {
+      grid-template-columns: 1fr;
+    }
+
+  .hidden-project > h2 {
+    width: 100%;
+    grid-column: 1/1;
+  }
+
+  .hidden-project-text,
+  .hidden-project-img {
+    grid-column: 1/1;
+  }
+
+
+  #hidden-project-img22,
+  #hidden-project-img23,
+  #hidden-project-img24 {
+    width: 30%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 535px) {
+  #hidden-project-img31 {
+    width: 100%;
+  }
+
+  #hidden-project-img32,
+  #hidden-project-img33,
+  #hidden-project-img34 {
+    width: 50%;
+  }
+}
+
+#alhems {
+  font-size: 18px;
+  color: #C33C3C;
+  font-weight: bolder;
+  margin-bottom: 15px;
+}
+
+#alhems:hover {
+  color: #2C2C54;
+}
+
+#alhemsmanual {
+  height: 400px;
+  width: 100%;
+}

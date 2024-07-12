@@ -1,0 +1,189 @@
+
+/*---------------------------------------
+  CUSTOM PROPERTIES ( VARIABLES )
+-----------------------------------------*/
+
+:root {
+  --white-color:                  #ffffff;
+  --primary-color:                #535da1;
+  --secondary-color:              #14B789;
+  --section-bg-color:             #f9f9f9;
+  --dark-color:                   #000000;
+  --p-color:                      #292929;
+  --border-color:                 #e9eaeb;
+  --featured-border-color:        #727aab;
+
+  --body-font-family:             'DM Sans', sans-serif;
+
+  --h1-font-size:                 62px;
+  --h2-font-size:                 48px;
+  --h3-font-size:                 36px;
+  --h4-font-size:                 32px;
+  --h5-font-size:                 24px;
+  --h6-font-size:                 22px;
+  --p-font-size:                  18px;
+  --menu-font-size:               12px;
+  --copyright-font-size:          14px;
+
+  --border-radius-large:          100px;
+  --border-radius-medium:         20px;
+  --border-radius-small:          10px;
+
+  --font-weight-normal:           400;
+  --font-weight-medium:           500;
+  --font-weight-bold:             700;
+}
+
+html {
+  height: 100%;
+  }
+
+body {
+    font-family: var(--body-font-family);
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    min-height: 100%;
+  }
+
+main {
+  grid-area: 2 / 2 / 2 / 2;
+  }
+
+/*---------------------------------------
+  TYPOGRAPHY
+-----------------------------------------*/
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--dark-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--font-weight-bold);
+  letter-spacing: -1px;
+}
+
+h1 {
+  font-size: var(--h1-font-size);
+  letter-spacing: -3px;
+}
+
+h2 {
+  font-size: var(--h2-font-size);
+  color: var(--secondary-color);
+  letter-spacing: -3px;
+}
+
+h3 {
+  font-size: var(--h3-font-size);
+}
+
+h4 {
+  font-size: var(--h4-font-size);
+}
+
+h5 {
+  font-size: var(--h5-font-size);
+  line-height: normal;
+}
+
+h6 {
+  font-size: var(--h6-font-size);
+}
+
+p {
+  color: var(--p-color);
+  font-size: var(--p-font-size);
+  font-weight: var(--font-weight-normal);
+}
+
+ul li {
+  color: var(--p-color);
+  font-size: var(--p-font-size);
+  font-weight: var(--font-weight-normal);
+}
+
+a,
+button {
+  touch-action: manipulation;
+  transition: all 0.3s;
+}
+
+a {
+  color: var(--p-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+.section-padding {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+b,
+strong {
+  font-weight: var(--font-weight-bold);
+}
+
+
+/*---------------------------------------
+  HERO
+-----------------------------------------*/
+.hero {
+margin: auto;
+}
+
+h1 {
+   margin: auto;
+   color: #C33C3C;
+   text-align: center;
+}
+
+footer {
+  grid-area: 3 / 3 / 3 / 3;
+}
+
+.site-footer {
+  margin: auto;
+  text-align: right;
+  margin-top: 30%;
+}
+
+#imgClickAndChange {
+  height: 100px;
+}
+
+/* Flashlight Overlay*/
+:root {
+  cursor:url('../images/flashlight.png'), auto;
+  --cursorX: 50vw;
+  --cursorY: 50vh;
+}
+:root:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  pointer-events: none;
+  background: radial-gradient(
+    circle 10vmax at var(--cursorX) var(--cursorY),
+    rgba(0,0,0,0) 10%,
+    rgba(0,0,0,.5) 60%,
+    rgba(0,0,0,.95) 100%,
+    rgba(0,0,0,1) 100%
+  )
+}
